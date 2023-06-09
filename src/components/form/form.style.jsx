@@ -13,7 +13,7 @@ export const StyledInputLabel = styled(InputLabel)`
 `;
 
 export const StyledTextField = styled(TextField)`
-  & .MuiInputBase-input {
+  .MuiInputBase-input {
     color: hsl(0, 0%, 8%);
     font-family: "Poppins", sans-serif;
     font-size: clamp(1rem, 5vw, 2rem);
@@ -21,29 +21,29 @@ export const StyledTextField = styled(TextField)`
     padding-left: clamp(1rem, 5vw, 1.5rem);
     max-width: clamp(5rem, 15vw, 7rem);
 
-    &::placeholder {
+    ::placeholder {
       font-size: clamp(1rem, 5vw, 2rem);
       font-weight: 700;
       color: hsl(0, 0%, 8%);
     }
 
-    &:hover {
+    :hover {
       cursor: pointer;
     }
   }
 
-  & .MuiOutlinedInput-root {
+  .MuiOutlinedInput-root {
     border-radius: 10px;
-    & fieldset {
+    fieldset {
       border-color: hsl(0, 0%, 86%);
     }
-    &:hover fieldset {
+    :hover fieldset {
       border-color: hsl(259, 100%, 65%);
     }
-    &.Mui-focused fieldset {
+    .Mui-focused fieldset {
       border-color: hsl(259, 100%, 65%);
     }
-    & .MuiOutlinedInput-input {
+    .MuiOutlinedInput-input {
       caret-color: hsl(259, 100%, 65%);
     }
   }
@@ -65,10 +65,10 @@ export const StyledButton = styled(Button)`
   padding: 0.9rem;
   top: -2rem;
   right: -4.4rem;
-  &.Mui-disabled {
+  .Mui-disabled {
     background-color: gray;
   }
-  &:hover {
+  :hover {
     background-color: hsl(0, 0%, 8%);
   }
   img {
