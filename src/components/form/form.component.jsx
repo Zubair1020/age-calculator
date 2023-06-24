@@ -98,7 +98,7 @@ const Form = ({ onSubmit }) => {
             }
             {...register("year", {
               required: "This field is required",
-              min: { value: 1, message: "Year must be at least 1" },
+              min: { value: 1900, message: "Year must be at least 1900" },
               max: {
                 value: currentDate.getFullYear(),
                 message: `Must be in the past`,
